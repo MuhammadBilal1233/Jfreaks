@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFreaks Software Solutions</title>
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- CSS only -->
+
+</head>
+
+<body>
+    <div class="nav background">
+        <div class="nav-bar flex-row nav-h">
+            <div class="nav-title">
+                <a href="#" style="color:rgb(205, 218, 95);">JFreaks Software Solutions</a>
+            </div>
+            <i class="fa-brands fa-sitrox nav-logo"></i>
+            <ul class="nav-items v-class">
+                <li class="nav-list">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#">Products</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#">Services</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <section class="firstsection background">
+        <div class="mainbox">
+            <div class="firsthalf">
+                <h1 class="text-large">
+                    Hello! Welcome to JFreaks Official Page
+                </h1>
+                <p class="text-small">
+                    JFreaks is a team of technology enthusiasts and hard-working professionals. We are a creative group
+                    of people and specialize in enterprise web and mobile applications. For rich user experience, rapid
+                    development and scalable results we use the following technologies:
+                    • Java EE, Spring Boot
+                    • Groovy / Grails
+                    • Angular
+                    • NodeJs
+                    <br>
+                    <br>
+                    Our software development spectrum encompasses the following extraordinary services toward the stable
+                    and continuous growth and ROI.
+                    • CI / CD pipelines.
+                    • Cloud native RESTFul Web services.
+                    • Hybrid and native mobile apps.
+                    • Progressive web apps.
+                    • Single Page Applications.
+                    • Integration and interaction among various Cloud apps.
+                    • Linux Server administration.
+                    <br>
+                    <br>
+                    We empower brands and startups with our best in class digital marketing services to achieve rapid
+                    growth and quick return on investment. We use our efficient marketing strategies to organize, manage
+                    and facilitate your business on the web. We aim to achieve an everlasting effect on your audience by
+                    using the following:
+                    • SEO (Search Engine Optimization)
+                    • SMM (Social Media Marketing)
+                    • SEM (Search Engine Marketing)
+                    • SMO (Social Media Optimization)
+                    • Paid Advertisements
+                    • Whiteboard and animated videos
+                    • Email Marketing
+
+                </p>
+                <div class="button">
+                    <a href="https://www.linkedin.com/company/jfreaks/about/"><button class="btn">Linkedin</button></a>
+                    <a href="https://www.jfreaks.com"><button class="btn">Company Website</button></a>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="./img/jfreaks.png" alt="sameer">
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="text-large sectiontag">
+                IPGeolocation
+            </p>
+            <p class="text-small">
+                Free IP API provides country, city, state, province, local currency, latitude and longitude, company
+                detail, ISP lookup, language, zip code, country calling code, time zone, current time, sunset and
+                sunrise time, moonset and moonrise time from any IPv4 and IPv6 address in REST, JSON and XML format over
+                HTTPS.
+                Our servers are Globally Available in countries including United States, Germany, France, United
+                Kingdom, Australia, Singapore and India. We route requests to the nearest and fastest node using
+                Cloudflare's Global Network.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/random/500x500/?IP,Map" alt="IPGeolocation">
+        </div>
+    </section>
+    <section class="api">
+        <p class="apititle apidesc text-large">IPGeolocation API</p>
+        <p class="apidesc text-small" id="ipgeolocation">Enter your IP Address</p>
+        <input type="text" id="ipgeo" class="ipgeo" placeholder="Enter IP Address">
+        <div class="btn-submit">
+            <button id="ip-submit" class="btn-black btn" onclick=IPGEO1()>Submit</button>
+        </div>
+    </section>
+    <section id="ipgeodata">
+        <div id="tabledata">
+            <table >
+                <tr>
+                    <td>IP</td>
+                    <td id="1"></td>
+                </tr>
+                <tr>
+                    <td>Continent_Code</td>
+                    <td id="2"></td>
+                </tr><tr>
+                    <td>Continent_Name</td>
+                    <td id="3"></td>
+                </tr><tr>
+                    <td>Country_Code</td>
+                    <td id="4"></td>
+                </tr><tr>
+                    <td>Country_Name</td>
+                    <td id="5"></td>
+                </tr><tr>
+                    <td>Country Capital</td>
+                    <td id="22"></td>
+                </tr><tr>
+                    <td>District</td>
+                    <td id="6"></td>
+                </tr><tr>
+                    <td>Latitude</td>
+                    <td id="7"></td>
+                </tr><tr>
+                    <td>Longitude</td>
+                    <td id="8"></td>
+                </tr><tr>
+                    <td>Is_EU</td>
+                    <td id="9"></td>
+                </tr><tr>
+                    <td>Calling Code</td>
+                    <td id="10"></td>
+                </tr><tr>
+                    <td>Country_tld</td>
+                    <td id="11"></td>
+                </tr><tr>
+                    <td>Languages</td>
+                    <td id="12"></td>
+                </tr><tr>
+                    <td>Geoname_id</td>
+                    <td id="13"></td>
+                </tr><tr>
+                    <td>ISP</td>
+                    <td id="14"></td>
+                </tr><tr>
+                    <td>Organization</td>
+                    <td id="15"></td>
+                </tr><tr>
+                    <td>Currency Code</td>
+                    <td id="16"></td>
+                </tr><tr>
+                    <td>Currency Name</td>
+                    <td id="17"></td>
+                </tr><tr>
+                    <td>Currency Symbol</td>
+                    <td id="18"></td>
+                </tr><tr>
+                    <td>Time_zone Name</td>
+                    <td id="19"></td>
+                </tr><tr>
+                    <td>Time_zone offset</td>
+                    <td id="20"></td>
+                </tr><tr>
+                    <td>Current Time</td>
+                    <td id="21"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="area">
+        <section class="section section-left">
+            <div class="paras">
+                <p class="text-large sectiontag">
+                    CurrencyFreaks
+                </p>
+                <p class="text-small">
+                    CurrencyFreaks provides currency conversion, current and historical forex exchange rate and currency
+                    fluctuation
+                    data through REST API in json and xml formats compatible. We provide real time exchange rate data
+                    for 350 world currencies, metals and crypto currencies updated in every minute.
+                    We take security seriously that is why every request to our server is SSL encrypted even in our free
+                    plan.
+                </p>
+            </div>
+            <div class="thumbnail">
+                <img src="https://source.unsplash.com/random/500x500/?Bitcoin" alt="CurrencyFreaks">
+            </div>
+        </section>
+    </div>
+    <section class="api">
+        <p class="apititle apidesc text-large">Currency Freaks</p>
+        <p class="apidesc text-small" id="ipgeolocation">Enter your IP Address</p>
+        <input type="text" id="currencyfreaks" class="ipgeo" placeholder="Enter IP Address">
+        <div class="btn-submit">
+            <button id="ip-submit" class="btn-black btn" onclick=CurrencyFreaks()>Submit</button>
+        </div>
+    </section>
+    <section id="ipgeodata">
+        <div id="tabledata2">
+            <table >
+                <tr>
+                    <td>Country_Name</td>
+                    <td id="100"></td>
+                </tr><tr>
+                    <td>Country Capital</td>
+                    <td id="101"></td>
+                </tr><tr>
+                    <td>Currency Code</td>
+                    <td id="102"></td>
+                </tr><tr>
+                    <td>Currency Name</td>
+                    <td id="103"></td>
+                </tr><tr>
+                    <td>Currency Symbol</td>
+                    <td id="104"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <br>
+    <section class="section">
+        <div class="paras">
+            <p class="text-large sectiontag">
+                WhoisFreaks
+            </p>
+            <p class="text-small">
+                We provide well-parsed and structured domain WHOIS data for all domain names, registrars, countries and
+                TLDs since the birth of internet. Our carefully crawled current and historical domain data is available
+                in the form of REST APIs, lookup tools, and downloadable database.
+                Get the WHOIS records and ownership details of any domain name, like owner name, email address, country,
+                creation, last updated, expiration, location of both registrar and domain in the JSON/XML format.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/random/500x500/?Cybersecurity" alt="WhoisFreaks">
+        </div>
+    </section>
+    <footer class="footer background">
+        <p class="text-footer">Copyright &copy;2022 - All Rights Reserved</p>
+        <p class="text-footer">JFreaks Software Solutions</p>
+        <p class="text-footer">Contact: +92-309-6571086</p>
+    </footer>
+    <!--Java Script-->
+    <script src="./js/ajax.js"></script>
+    <script src="https://kit.fontawesome.com/6124465ac5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
